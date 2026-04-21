@@ -35,6 +35,8 @@ class SoundSystem {
         std::vector<SoundStates> getPlayback();
         std::vector<Sound> getSongBank();
         std::vector<Sound> getInstrumentBank();
+        std::string getSongName(int);
+        std::string getInstrumentName(int);
 };
 
 #endif

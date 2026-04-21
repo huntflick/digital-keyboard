@@ -205,3 +205,17 @@ std::vector<Sound> SoundSystem::getSongBank() {
 std::vector<Sound> SoundSystem::getInstrumentBank() {
     return this->instruments;
 }
+
+std::string SoundSystem::getSongName(int songIndex) {
+    if (songIndex >= this->songs.size()) {
+        return "INVALID SONG";
+    }
+    return this->songs[songIndex].getName();
+}
+
+std::string SoundSystem::getInstrumentName(int instrumentIndex) {
+    if (instrumentIndex >= this->instruments.size()) {
+        return "INVALID Instrument";
+    }
+    return this->instruments[instrumentIndex].getName();
+}
