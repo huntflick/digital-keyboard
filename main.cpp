@@ -224,7 +224,7 @@ int main(int argc, char** argv) {
         if (instFound != std::string::npos) {
             instName = instName.substr(instFound + 1);
         }
-        manager.renderUI(songName, instName, octaveOffset);
+        manager.renderUI(songName, instName, octaveOffset + 3);
         
         manager.updateWindows(octaveOffset);
     }

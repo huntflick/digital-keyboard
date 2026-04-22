@@ -233,7 +233,7 @@ void SDL_Manager::renderUI(const std::string& song, const std::string& instrumen
     ImGui::Begin("Music Info", nullptr, ImGuiWindowFlags_NoBackground | ImGuiWindowFlags_NoTitleBar);
     ImGui::Text("Current Song: %s", song.c_str());
     ImGui::Text("Instrument: %s", instrument.c_str());
-    ImGui::Text("Octave Offset: %d", octave);
+    ImGui::Text("Octave: %d", octave);
     ImGui::Text("\n");
     ImGui::Text("            Controls");
     ImGui::Text("__________________________________");
